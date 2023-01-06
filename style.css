@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #e0e8ff;
+  background-image: url("images/pattern-background-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (min-width: 45rem) {
+  body {
+    background-image: url("images/pattern-background-desktop.svg");
+  }
+}
+main {
+  max-width: 21rem;
+  display: grid;
+  place-content: center;
+
+  gap: 1rem;
+  justify-items: center;
+  color: #7280a7;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.hero-img {
+  width: 100%;
+}
+.hero-section {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+}
+.hero-heading {
+  font-size: 1.4rem;
+  font-weight: 900;
+  padding-top: 1rem;
+
+  color: #1f2f56;
+}
+.hero-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+
+  margin: 0.45rem 10%;
+}
+.ordered-items {
+  display: grid;
+  background-color: hsl(225, 100%, 98%);
+  grid-template-columns: auto 1fr auto;
+  gap: 0 1rem;
+  padding: 1rem 1.2rem;
+  margin: 0 1.1rem;
+  border-radius: 1rem;
+}
+.grid-span-row {
+  grid-row: 1 / span 2;
+  align-self: center;
+}
+.music-icon {
+  width: 4.5ch;
+}
+.plan {
+  grid-column: 2/3;
+  font-size: 1rem;
+
+  color: #1f2f56;
+  font-weight: 700;
+  padding-right: 2rem;
+}
+.plan-price {
+  grid-column: 2/3;
+
+  font-size: 1rem;
+}
+.change-plan:link,
+.change-plan:visited {
+  grid-column: 3/4;
+  font-weight: 700;
+
+  font-size: 0.9rem;
+}
+.change-plan:hover,
+.change-plan:active {
+  text-decoration: none;
+  color: rgba(56, 41, 224, 0.6);
+}
+.payment-btn:link,
+.payment-btn:visited {
+  background-color: #3829e0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 0.9rem 4rem;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  box-shadow: 0 1rem 1rem 0rem hsl(225, 100%, 94%);
+}
+.payment-btn:hover,
+.payment-btn:active {
+  background-color: rgba(56, 41, 224, 0.6);
+}
+.cancel-order:link,
+.cancel-order:visited {
+  text-decoration: none;
+  font-weight: 700;
+  color: #7280a7;
+  margin: 0.5rem 0 2rem 0;
+}
+.cancel-order:hover,
+.cancel-order:active {
+  color: #1f2f56;
+}
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
