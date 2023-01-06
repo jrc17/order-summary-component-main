@@ -32,6 +32,8 @@ main {
   background-color: #fff;
   border-radius: 1rem;
   overflow: hidden;
+
+  box-shadow: 0rem 0.05rem 1rem 0.05rem hsla(224, 23%, 55%, 0.171);
 }
 .hero-img {
   width: 100%;
