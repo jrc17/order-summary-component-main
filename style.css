@@ -22,7 +22,7 @@ body {
   }
 }
 main {
-  max-width: 21rem;
+  max-width: 22rem;
   display: grid;
   place-content: center;
 
@@ -51,11 +51,11 @@ main {
   color: #1f2f56;
 }
 .hero-description {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   text-align: center;
 
-  margin: 0.45rem 10%;
+  padding: 0.45rem 1rem;
 }
 .ordered-items {
   display: grid;
@@ -90,7 +90,7 @@ main {
 .change-plan:visited {
   grid-column: 3/4;
   font-weight: 700;
-
+  color: rgba(56, 41, 224, 0.842);
   font-size: 0.9rem;
 }
 .change-plan:hover,
